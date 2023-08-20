@@ -1,6 +1,7 @@
+import SideConfig from "./SideConfig/SideConfig"
 // 配置文件
 export default {
-    // baseUrl: './',//服务器打包路径
+    baseUrl: '/',//服务器打包路径
     title: 'React教学', //浏览器的title
     description: '前端猛男', //会转换成为meta标签
     lang: "zh-CN", //设置页面的标记语言
@@ -31,28 +32,7 @@ export default {
         // 左侧边导航栏的路由
         sidebar: {
             // 当前文件下的路由 用来当做key
-            "/": [
-                {
-                    text: '一级标题',//一级侧边导航栏标题
-                    collapsible: true, // 当前侧边栏是否允许折叠
-                    collapsed: false,// 当前侧边栏进入页面时是否自动展开
-                    // 当前侧边导航栏的二级标题  跟  路由
-                    items: [
-                        { text: '二级标题', link: '/.vitepress/guide/ReactBasics/' },
-                        { text: '二级标题2', link: '/.vitepress/guide/ReactBasics/index2.md' }
-                    ]
-                },
-                {
-                    text: '二级标题',//一级侧边导航栏标题
-                    collapsible: true, // 当前侧边栏是否允许折叠
-                    collapsed: false,// 当前侧边栏进入页面时是否自动展开
-                    // 当前侧边导航栏的二级标题  跟  路由
-                    items: [
-                        { text: '二级标题', link: '/.vitepress/guide/ReactRouter/' },
-                        { text: '二级标题2', link: '/.vitepress/guide/ReactRouter/index2.md' }
-                    ]
-                },
-            ]
+            "/": SideConfig
         },
         //右侧边导航栏的标题
         outlineTitle: {},
