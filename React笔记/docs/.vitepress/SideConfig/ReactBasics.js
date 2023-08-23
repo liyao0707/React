@@ -22,6 +22,10 @@ export default {
                 { text: '6. 事件绑定', link: `${commonPath}/${viewPath}/${children1}/06-事件绑定` },
                 { text: '7. ref应用', link: `${commonPath}/${viewPath}/${children1}/07-ref应用` },
                 { text: '8. state状态', link: `${commonPath}/${viewPath}/${children1}/08-state状态` },
+                { text: '9. 富文本', link: `${commonPath}/${viewPath}/${children1}/09-富文本` },
+                { text: '10. props属性', link: `${commonPath}/${viewPath}/${children1}/10-属性props` },
+                { text: '10.1 属性(props)与状态(state) 的区别 ', link: `${commonPath}/${viewPath}/${children1}/10.1-属性与状态的区别` },
+                { text: '11. 受控组件与非受控组件', link: `${commonPath}/${viewPath}/${children1}/11-受控与非受控` }
             ]
         }
     ]

@@ -17,9 +17,13 @@
 >
 > 不能直接操作修改数据 React是无法感知的 需要使用`this.setState()`方法来修改 state状态里面的数据 这点类似小程序
 
+> **setState 接收第二个参数  是个回调函数 数据跟真实Dom更新完毕之后 就会触发回调**
+
+>**只要setState方法修改状态 就会触发组件render()函数重新调用更新 render函数内部立即调用的方法也会随着更新调用**
+
 ```
 <!-- 固定方法 -->
- this.setState({ a:2 }) 
+ this.setState({ a:2 }, () => { }) 
  console.log(this.state.a) // 2
 ```
 
@@ -27,11 +31,25 @@
 + **调用状态** `this.state.a`
 + **修改状态** `this.setState({ a:1 })`
 
+::: tip 注意事项
+
+```
+17 版本之前
+setState 在同步中 是异步更新状态 (数据 真实Dom)` 
+setState 在异步中 是同步更新状态 (数据 真实Dom)`
+
+18 版本之后
+setState 都是异步的状态
+```
+
+:::
+
 ### 状态小Demo
 
 ::: tip 状态体验
 
 ```
+
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 
@@ -48,7 +66,7 @@ class App extends Component {
         <div>前端猛男</div>
             <button onClick={ async() => {
                 // 修改数据状态 this.setState() 固定方法
-                   await this.setState({ 
+                   await this.setState({
                       Show:!this.state.Show
                    })
                 // 调用状态
@@ -61,6 +79,7 @@ class App extends Component {
   }
 }
 ReactDom.render(<App/>,document.getElementById('root'))
+
 ```
 
 :::
@@ -73,6 +92,7 @@ ReactDom.render(<App/>,document.getElementById('root'))
 ::: tip map循环列表
 
 ```
+
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 class App extends Component {
@@ -97,6 +117,7 @@ class App extends Component {
   }
 }
 ReactDom.render(<App/>,document.getElementById('root'))
+
 ```
 
 :::
@@ -106,6 +127,7 @@ ReactDom.render(<App/>,document.getElementById('root'))
 ::: tip 最好不要直接在原数据上面操作 深拷贝一份原数据 在这个基础上修改
 
 ```
+
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 // 增删小demo
@@ -174,9 +196,10 @@ ReactDom.render(<App/>,document.getElementById('root'))
 ### 条件渲染
 
 ```
+
 // 条件判断一： 是否有该元素  类似v-if  
 {this.state.list.length === 0 ? <div>暂无数据 类似v-if</div> : null}
-    
+
 // 条件判断二： 是否显示隐藏  类似v-show
 <div className={ this.state.list.length === 0?'':'hidden' }>暂无数据 类似v-show</div>
 ```

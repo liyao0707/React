@@ -36,7 +36,17 @@ import ReactDom from 'react-dom';
 // import App from './基础知识/06-ref的应用'
 
 // 07-state状态
-import App from './基础知识/07-state状态'
+// import App from './基础知识/07-state状态'
+
+// 08-富文本
+// import App from './基础知识/08-富文本'
+
+// 09-属性props
+// import App from './基础知识/09-属性props/09-属性props'
+
+// 10-受控组件与非受控组件
+import App from './基础知识/10-受控与非受控'
+
 // ReactDom.render(<App></App>, document.getElementById('root'))
 ReactDom.render(
     // StrictMode打开React的严格模式
