@@ -23,9 +23,29 @@ export default {
                 { text: '7. ref应用', link: `${commonPath}/${viewPath}/${children1}/07-ref应用` },
                 { text: '8. state状态', link: `${commonPath}/${viewPath}/${children1}/08-state状态` },
                 { text: '9. 富文本', link: `${commonPath}/${viewPath}/${children1}/09-富文本` },
-                { text: '10. props属性', link: `${commonPath}/${viewPath}/${children1}/10-属性props` },
-                { text: '10.1 属性(props)与状态(state) 的区别 ', link: `${commonPath}/${viewPath}/${children1}/10.1-属性与状态的区别` },
-                { text: '11. 受控组件与非受控组件', link: `${commonPath}/${viewPath}/${children1}/11-受控与非受控` }
+                {
+                    text: '10. 属性',
+                    collapsed: true,
+                    collapslible: true,
+                    items: [
+                        { text: '1. 属性props', link: `${commonPath}/${viewPath}/${children1}/10-属性props` },
+                        { text: '2. 属性(props)与状态(state) 的区别 ', link: `${commonPath}/${viewPath}/${children1}/10.1-属性与状态的区别` },
+                    ]
+
+                },
+                { text: '11. 受控组件与非受控组件', link: `${commonPath}/${viewPath}/${children1}/11-受控与非受控` },
+                {
+                    text: '12. 组件通信',
+                    collapsed: false,
+                    collapsible: true,
+                    items: [
+                        { text: '1. 父子通信', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.1-父子通信` },
+                        { text: '2. 表单域组件', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.2-表单域组件` },
+                        { text: '3. 非父子通信-中间人模式', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.3-非父子通信-中间人模式` },
+                        { text: '4. 非父子通信-订阅发布模式', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.4-非父子通信-订阅发布模式` },
+                        { text: '5. 非父子通信-跨组件通信context方案', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.5-非组件通信-context方案` },
+                    ]
+                },
             ]
         }
     ]

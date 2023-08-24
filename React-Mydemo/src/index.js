@@ -45,7 +45,23 @@ import ReactDom from 'react-dom';
 // import App from './基础知识/09-属性props/09-属性props'
 
 // 10-受控组件与非受控组件
-import App from './基础知识/10-受控与非受控'
+// import App from './基础知识/10-受控与非受控'
+
+// 11-1 组件通信-父子通讯
+// import App from './基础知识/11-组件通信/1-父子通信';
+
+// 11-2 表单域组件
+// import App from './基础知识/11-组件通信/2-表单域组件';
+
+// 11-3 非父子组件通信-状态提升(中间人模式)
+// import App from './基础知识/11-组件通信/3-非父子通信-中间人模式';
+
+// 11-4 非父子组件通信-订阅发布模式
+// import App from './基础知识/11-组件通信/4-非父子通信-订阅发布模式';
+
+// 11-5 非父子组件通信-context方案跨组件通信
+import App from './基础知识/11-组件通信/5-非组件通信-context方案';
+
 
 // ReactDom.render(<App></App>, document.getElementById('root'))
 ReactDom.render(
