@@ -60,7 +60,30 @@ import ReactDom from 'react-dom';
 // import App from './基础知识/11-组件通信/4-非父子通信-订阅发布模式';
 
 // 11-5 非父子组件通信-context方案跨组件通信
-import App from './基础知识/11-组件通信/5-非组件通信-context方案';
+// import App from './基础知识/11-组件通信/5-非组件通信-context方案';
+
+// 12-插槽
+// import App from './基础知识/12-插槽';
+
+
+// 13-1 类组件生命周期-初始化
+// import App from './基础知识/13-生命周期/1-类组件生命周期-初始化';
+
+// 13-2 类组件生命周期-更新中
+// import App from './基础知识/13-生命周期/2-类组件生命周期-更新中';
+
+// 13-3 类组件生命周期-销毁
+// import App from './基础知识/13-生命周期/3-类组件生命周期-销毁'
+
+
+// 13-4 类组件新生命周期一
+// import App from './基础知识/13-生命周期/4-类组件新生命周期一'
+
+// 13-5 类组件新生命周期二
+// import App from './基础知识/13-生命周期/5-类组件新生命周期二'
+
+// 13-6 性能提升
+import App from './基础知识/13-生命周期/6-性能提升'
 
 
 // ReactDom.render(<App></App>, document.getElementById('root'))
