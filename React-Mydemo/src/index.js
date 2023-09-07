@@ -83,8 +83,34 @@ import ReactDom from 'react-dom';
 // import App from './基础知识/13-生命周期/5-类组件新生命周期二'
 
 // 13-6 性能提升
-import App from './基础知识/13-生命周期/6-性能提升'
+// import App from './基础知识/13-生命周期/6-性能提升'
 
+// 14-1 Hooks-useState
+// import App from './基础知识/14-Hooks/1-useState'
+
+// 14-2 Hooks-useEffct
+// import App from './基础知识/14-Hooks/2-useEffect'
+
+// 14-3 Hooks-useCallback
+// import App from './基础知识/14-Hooks/3-useCallback'
+
+// 14-4 Hooks-useMemo
+// import App from './基础知识/14-Hooks/4-useMemo'
+
+// 14-5 Hooks-useRef
+// import App from './基础知识/14-Hooks/5-useRef'
+
+// 14-6 Hooks-useContext
+// import App from './基础知识/14-Hooks/6-useContext'
+
+// 14-7 Hooks-useReducer
+// import App from './基础知识/14-Hooks/7-useReducer'
+
+// 14-8 Hooks-自定义Hooks
+// import App from './基础知识/14-Hooks/8-自定义Hooks'
+
+// 15-1 路由
+import App from './基础知识/15-路由/App'
 
 // ReactDom.render(<App></App>, document.getElementById('root'))
 ReactDom.render(

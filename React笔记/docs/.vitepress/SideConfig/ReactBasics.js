@@ -4,7 +4,7 @@ const children1 = '/基础知识'
 export default {
     text: 'React', //一级标题的名称
     collapsible: true, //是否允许折叠侧边菜单栏
-    collapsed: false, //当前菜单栏进入页面时是否自动展开
+    collapsed: false, //当前菜单栏进入页面时是否不自动展开
     // 二级菜单列表
     items: [
         //  text：二级标题的名称  link:二级标题的路由地址
@@ -26,7 +26,7 @@ export default {
                 {
                     text: '10. 属性',
                     collapsed: true,
-                    collapslible: true,
+                    collapslible: false,
                     items: [
                         { text: '1. 属性props', link: `${commonPath}/${viewPath}/${children1}/10-属性props` },
                         { text: '2. 属性(props)与状态(state) 的区别 ', link: `${commonPath}/${viewPath}/${children1}/10.1-属性与状态的区别` },
@@ -37,7 +37,7 @@ export default {
                 {
                     text: '12. 组件通信',
                     collapsed: true,
-                    collapsible: true,
+                    collapsible: false,
                     items: [
                         { text: '1. 父子通信', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.1-父子通信` },
                         { text: '2. 表单域组件', link: `${commonPath}/${viewPath}/${children1}/12-组件通信/12.2-表单域组件` },
@@ -49,19 +49,48 @@ export default {
                 { text: '13. 插槽', link: `${commonPath}/${viewPath}/${children1}/13-插槽` },
                 {
                     text: '14. 生命周期',
-                    collapsed: false,
-                    collapsible: true,
+                    collapsed: true,
+                    collapsible: false,
                     items: [
-                        { text: '1.类组件生命周期-初始化 ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.1-类组件生命周期-初始化` },
-                        { text: '2.类组件生命周期-更新中 ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.2-类组件生命周期-更新中` },
-                        { text: '3.类组件生命周期-销毁 ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.3-类组件生命周期-销毁` },
-                        { text: '4.类组件新生命周期-getDerivedStateFromProps ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.4-类组件新生命周期一` },
-                        { text: '5.类组件新生命周期-getSnapshotBeforeUpdate', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.5-类组件新生命周期二` },
-                        { text: '6.性能提升', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.6-性能提升` },
-                        { text: '7.总结', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.7-总结` },
+                        { text: '1. 类组件生命周期-初始化 ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.1-类组件生命周期-初始化` },
+                        { text: '2. 类组件生命周期-更新中 ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.2-类组件生命周期-更新中` },
+                        { text: '3. 类组件生命周期-销毁 ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.3-类组件生命周期-销毁` },
+                        { text: '4. 类组件新生命周期-getDerivedStateFromProps ', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.4-类组件新生命周期一` },
+                        { text: '5. 类组件新生命周期-getSnapshotBeforeUpdate', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.5-类组件新生命周期二` },
+                        { text: '6. 性能提升', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.6-性能提升` },
+                        { text: '7. 总结', link: `${commonPath}/${viewPath}/${children1}/14-生命周期/14.7-总结` },
 
                     ]
                 },
+                {
+                    text: "15. Hooks",
+                    collapsed: true,
+                    collapsible: false,
+                    items: [
+                        { text: "1. 为什么使用Hooks ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.1-为什么使用Hooks` },
+                        { text: "2. useState ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.2-useState` },
+                        { text: "3. useEffect ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.3-useEffect` },
+                        { text: "4. useCallback ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.4-useCallback` },
+                        { text: "5. useMemo ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.5-useMemo` },
+                        { text: "6. useRef ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.6-useRef` },
+                        { text: "7. useContext ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.7-useContext` },
+                        { text: "8. useReducer ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.8-useReducer` },
+                        { text: "9. 自定义hooks ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.9-自定义Hooks` },
+
+                    ]
+                },
+                {
+                    text: '16. 路由',
+                    collapsed: false,
+                    collapsible: true,
+                    items: [
+                        { text: '1. 路由安装与介绍', link: `${commonPath}/${viewPath}/${children1}/16-路由/16.1-安装与介绍` },
+                        { text: '2. 一级路由与多级路由', link: `${commonPath}/${viewPath}/${children1}/16-路由/16.2-一级路由与多级路由` },
+                        { text: '3. 路由重定向', link: `${commonPath}/${viewPath}/${children1}/16-路由/16.3-路由重定向` },
+                        { text: '4. 路由嵌套', link: `${commonPath}/${viewPath}/${children1}/16-路由/16.4-路由嵌套` },
+                        { text: '5. 路由跳转', link: `${commonPath}/${viewPath}/${children1}/16-路由/16.5-路由跳转` },
+                    ]
+                }
             ]
         }
     ]
