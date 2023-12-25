@@ -2,7 +2,7 @@ import React, { useMemo, useState } from "react";
 import { NavLink, useHistory } from "react-router-dom";
 import "../../../../../../public/css/01-组件的样式.css";
 export default function Footers(props) {
-  console.log(props);
+  // console.log(props);
   const [list] = useState([
     { name: "首页", url: "/Home" },
     { name: "新闻", url: "/News" },

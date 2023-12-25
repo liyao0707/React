@@ -13,13 +13,13 @@ hero:
       text: 开始学习 →
       link: ./.vitepress/guide/ReactBasics/
 features:
-  - icon: ⚡️
+  - icon: 📌
     title: WeChat
     details: ly13623925034  
-  - icon: ⚡️
+  - icon: 🐧
     title: QQ
     details: 1491289963
-  - icon: ⚡️
+  - icon: ☎️
     title: Phone
     details: 13623925034  
 ---

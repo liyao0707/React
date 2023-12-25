@@ -3,7 +3,6 @@
 import React from 'react';
 // ReactDom 可以帮我们把React组件渲染到页面上去 ，它是从react-dom中引入的 而不是react
 import ReactDom from 'react-dom';
-
 /**
  * @render方法
  * @参数1 ：需要插入的内容  || 需要插入的html标签
@@ -110,7 +109,13 @@ import ReactDom from 'react-dom';
 // import App from './基础知识/14-Hooks/8-自定义Hooks'
 
 // 15-1 路由
-import App from './基础知识/15-路由/App'
+// import App from './基础知识/15-路由/App'
+
+// 2.进阶知识-Redux
+// import App from './2.进阶知识-Redux/view/App'
+
+// 3.进阶知识-react-Redux
+import App from './3.进阶知识-react-Redux/views/App';
 
 // ReactDom.render(<App></App>, document.getElementById('root'))
 ReactDom.render(

@@ -1,0 +1,7 @@
+.active {
+    color: aqua;
+}
+
+:global(.Myactive) {
+    color: red;
+}

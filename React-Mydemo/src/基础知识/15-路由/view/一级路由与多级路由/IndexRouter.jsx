@@ -7,15 +7,23 @@
  */
 import React from "react";
 // 路由模块
-import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import {
+  HashRouter,
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 // 页面
 import Home from "./tabber/Home";
 import News from "./tabber/news";
 import Wode from "./tabber/wode";
 import NotFounted from "./tabber/NotFounted";
-import Footers from "./tabber/Footers/Footers";
 export default function IndexRouter(props) {
-  console.log(props);
+  // console.log(props);
+  const isToken = () => {
+    return localStorage.getItem("token");
+  };
   return (
     <div>
       {/* Hash模式 */}
@@ -24,8 +32,18 @@ export default function IndexRouter(props) {
         <Switch>
           {/* 路由表 */}
           <Route path="/Home" component={Home}></Route>
+          {/* render属性 接收一个回调函数必需返回一个组件 可以在里面处理逻辑 从而达到拦截效果 */}
+          <Route
+            path="/Wode/Wode"
+            render={() =>
+              isToken() ? <Wode /> : <Redirect from="/" to="/"></Redirect>
+            }
+          ></Route>
+
+          {/* 动态路由传参需要来path上以/:key名的形式来定义占位数据 */}
+          {/* <Route path="/News/:id/:name" component={News}></Route> */}
+          {/* 路由传参 正常的路径就行 不需要占位符 */}
           <Route path="/News" component={News}></Route>
-          <Route path="/Wode/Wode" component={Wode}></Route>
 
           {/* 模糊匹配  from模糊匹配内容  to去往的地址 */}
           {/* 当url有模糊匹配的内容时 他会去往to设置的页面 */}
