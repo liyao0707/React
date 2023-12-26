@@ -1,4 +1,4 @@
-const commonPath = '/.vitepress/guide'
+const commonPath = './.vitepress/guide'
 const viewPath = '/ReactBasics'
 const children1 = '/基础知识'
 const children2 = '/进阶知识'
