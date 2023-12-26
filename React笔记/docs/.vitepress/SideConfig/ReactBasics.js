@@ -4,8 +4,8 @@ const children1 = '基础知识'
 const children2 = '进阶知识'
 export default {
     text: 'React', //一级标题的名称
-    collapsible: true, //是否允许折叠侧边菜单栏
-    collapsed: false, //当前菜单栏进入页面时是否不自动展开
+    collapsible: false, //是否允许折叠侧边菜单栏
+    collapsed: true, //当前菜单栏进入页面时是否不自动展开
     // 二级菜单列表
     items: [
         //  text：二级标题的名称  link:二级标题的路由地址
@@ -13,7 +13,7 @@ export default {
         { text: '构建环境', link: `${commonPath}/${viewPath}/index2` },
         {
             text: "基础知识", link: `${commonPath}/${viewPath}/${children1}/index`,
-            collapsible: true, collapsed: true,
+            collapsible: true, collapsed: false,
             items: [
                 { text: '1. 什么是JSX', link: `${commonPath}/${viewPath}/${children1}/01-什么是JSX` },
                 { text: '2. 类组件', link: `${commonPath}/${viewPath}/${children1}/02-类组件` },
@@ -102,8 +102,8 @@ export default {
         },
         {
             text: '进阶知识',
-            collapsed: false,
-            collapsible: true,
+            collapsed: true,
+            collapsible: false,
             items: [
                 {
                     text: '1. Redux',
