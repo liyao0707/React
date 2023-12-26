@@ -6,7 +6,7 @@ hero:
   text: 好好努力吧
   tagline: 不断的学习，才能更好的充实自己
   image:
-    src: /.vitepress/public/images/logo.jpg
+    src: /public/images/logo.jpg
     alt: logo
   actions:
     - theme: brand

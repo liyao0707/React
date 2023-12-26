@@ -1,18 +1,18 @@
 import SideConfig from "./SideConfig/SideConfig"
 // 配置文件
 export default {
-    baseUrl: '/',//服务器打包路径
+    base: './',//服务器打包路径
     title: 'React教学', //浏览器的title
     description: '前端猛男', //会转换成为meta标签
     lang: "zh-CN", //设置页面的标记语言
     head: [ //设置浏览器的图标
-        ["link", { rel: "前端猛男的logo", href: "./docs/.vitepress/public/images/logo.jpg" }]
+        ["link", { rel: "前端猛男的logo", href: "./public/images/logo.jpg" }]
     ],
-    outDir: "", //打包目录文件 默认是dist
+    outDir: "../../../pages", //打包目录文件 默认是dist
     //主题配置
     themeConfig: {
         siteTitle: '前端猛男的博客', //顶部导航栏的标题
-        logo: '/.vitepress/public/images/logo.jpg', //顶部导航栏标题前的图标
+        logo: './public/images/logo.jpg', //顶部导航栏标题前的图标
         //配置顶部导航栏的路由 右侧 
         nav: [
             { text: 'React基础', link: '/.vitepress/guide/ReactBasics/index', activeMatch: '/.vitepress/guide/ReactBasics/' }, //text：名字  link:跳转到哪里的路由 activeMatch:匹配跳转路由的高亮 通常跟link一致
