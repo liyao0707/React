@@ -1,14 +1,14 @@
 import SideConfig from "./SideConfig/SideConfig"
 // 配置文件
 export default {
-    base: './',//服务器打包路径
+    base: '/pages/',//服务器打包路径
     title: 'React教学', //浏览器的title
     description: '前端猛男', //会转换成为meta标签
     lang: "zh-CN", //设置页面的标记语言
     head: [ //设置浏览器的图标
         ["link", { rel: "前端猛男的logo", href: "./public/images/logo.jpg" }]
     ],
-    outDir: "../../../pages", //打包目录文件 默认是dist
+    outDir: 'D:/学习干货/前端/React/pages', //打包目录文件 默认是dist
     //主题配置
     themeConfig: {
         siteTitle: '前端猛男的博客', //顶部导航栏的标题
