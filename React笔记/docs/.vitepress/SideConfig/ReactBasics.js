@@ -13,7 +13,8 @@ export default {
         { text: '构建环境', link: `${commonPath}/${viewPath}/index2` },
         {
             text: "基础知识", link: `${commonPath}/${viewPath}/${children1}/index`,
-            collapsible: true, collapsed: false,
+            collapsed: false,
+            collapsible: true,
             items: [
                 { text: '1. 什么是JSX', link: `${commonPath}/${viewPath}/${children1}/01-什么是JSX` },
                 { text: '2. 类组件', link: `${commonPath}/${viewPath}/${children1}/02-类组件` },
