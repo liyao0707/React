@@ -1,17 +1,18 @@
 ---
 title: 前端猛男
 layout: home
+home: true
 hero:
-  name: 前端猛男的React笔记  
-  text: 好好努力吧
-  tagline: 不断的学习，才能更好的充实自己
+  name: React笔记  
+  text: 好好努力吧！
+  tagline: 不断的学习，才能更好的充实自己！
   image:
-    src: /public/images/logo.jpg
+    src: ./images/logo.jpg
     alt: logo
   actions:
     - theme: brand
       text: 开始学习 →
-      link: ./.vitepress/guide/ReactBasics/
+      link: /guide/reactbasics/
 features:
   - icon: 📌
     title: WeChat

@@ -1,27 +1,27 @@
 import SideConfig from "./SideConfig/SideConfig"
 // 配置文件
 export default {
-    base: './',//服务器打包路径
+    base: '/pages/',//服务器打包路径
     title: 'React教学', //浏览器的title
     description: '前端猛男', //会转换成为meta标签
     lang: "zh-CN", //设置页面的标记语言
     head: [ //设置浏览器的图标
-        ["link", { rel: "前端猛男的logo", href: "./public/images/logo.jpg" }]
+        ["link", { rel: "前端猛男的logo", href: "./images/logo.jpg" }]
     ],
     outDir: 'D:/学习干货/前端/React/pages', //打包目录文件 默认是dist
     //主题配置
     themeConfig: {
         siteTitle: '前端猛男的博客', //顶部导航栏的标题
-        logo: './public/images/logo.jpg', //顶部导航栏标题前的图标
+        logo: './images/logo.jpg', //顶部导航栏标题前的图标
         //配置顶部导航栏的路由 右侧 
         nav: [
-            { text: 'React基础', link: '/.vitepress/guide/ReactBasics/index', activeMatch: '/.vitepress/guide/ReactBasics/' }, //text：名字  link:跳转到哪里的路由 activeMatch:匹配跳转路由的高亮 通常跟link一致
+            { text: 'React基础', link: './guide/reactbasics/index', activeMatch: '/.vitepress/guide/reactbasics/' }, //text：名字  link:跳转到哪里的路由 activeMatch:匹配跳转路由的高亮 通常跟link一致
             {
                 text: 'React进阶', //导航栏名字
                 // 二级下拉导航栏
                 items: [
-                    { text: "二级标题", link: '/.vitepress/guide/ReactBasics/' },
-                    { text: "二级标题2", link: '/.vitepress/guide/ReactBasics/index2.md' }
+                    { text: "二级标题", link: './guide/reactbasics/' },
+                    { text: "二级标题2", link: './guide/reactbasics/index2.md' }
                 ]
             } //text：名字  link:跳转到哪里的路由 activeMatch:匹配跳转路由的高亮 通常跟link一致
         ],

@@ -1,5 +1,5 @@
-const commonPath = './.vitepress/guide'
-const viewPath = '/ReactBasics'
+const commonPath = '/guide'
+const viewPath = '/reactbasics'
 const children1 = '/基础知识'
 const children2 = '/进阶知识'
 export default {
@@ -13,8 +13,7 @@ export default {
         { text: '构建环境', link: `${commonPath}/${viewPath}/index2` },
         {
             text: "基础知识", link: `${commonPath}/${viewPath}/${children1}/index`,
-            collapsed: false,
-            collapsible: true,
+            collapsible: true, collapsed: true,
             items: [
                 { text: '1. 什么是JSX', link: `${commonPath}/${viewPath}/${children1}/01-什么是JSX` },
                 { text: '2. 类组件', link: `${commonPath}/${viewPath}/${children1}/02-类组件` },
@@ -66,8 +65,8 @@ export default {
                 },
                 {
                     text: "15. Hooks",
-                    collapsed: false,
-                    collapsible: true,
+                    collapsed: true,
+                    collapsible: false,
                     items: [
                         { text: "1. 为什么使用Hooks ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.1-为什么使用Hooks` },
                         { text: "2. useState ", link: `${commonPath}/${viewPath}/${children1}/15-Hooks/15.2-useState` },
@@ -132,8 +131,7 @@ export default {
                     collapsible: true,
                     items: [
                         { text: '1. 使用方法', link: `${commonPath}/${viewPath}/${children2}/react-redux/1-使用方法` },
-                        { text: '2. 原理', link: `${commonPath}/${viewPath}/${children2}/react-redux/2-原理` },
-                        { text: '3. 持久化存储', link: `${commonPath}/${viewPath}/${children2}/react-redux/3-redux-persist` },
+                        { text: '2. 原理', link: `${commonPath}/${viewPath}/${children2}/react-redux/2-原理` }
 
                     ]
                 }
