@@ -7,7 +7,7 @@ hero:
   text: 好好努力吧！
   tagline: 不断的学习，才能更好的充实自己！
   image:
-    src: ./images/logo.jpg
+    src: /images/logo.jpg
     alt: logo
   actions:
     - theme: brand
