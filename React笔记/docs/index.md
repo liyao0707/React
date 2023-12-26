@@ -1,7 +1,6 @@
 ---
 title: 前端猛男
 layout: home
-home: true
 hero:
   name: React笔记  
   text: 好好努力吧！
