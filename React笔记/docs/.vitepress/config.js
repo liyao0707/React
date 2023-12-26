@@ -1,7 +1,7 @@
 import SideConfig from "./SideConfig/SideConfig"
 // 配置文件
 export default {
-    base: '/',//服务器打包路径
+    base: './',//服务器打包路径
     title: 'React教学', //浏览器的title
     description: '前端猛男', //会转换成为meta标签
     lang: "zh-CN", //设置页面的标记语言
