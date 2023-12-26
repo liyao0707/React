@@ -1,7 +1,7 @@
 const commonPath = '/guide'
-const viewPath = '/reactbasics'
-const children1 = '/基础知识'
-const children2 = '/进阶知识'
+const viewPath = 'reactbasics'
+const children1 = '基础知识'
+const children2 = '进阶知识'
 export default {
     text: 'React', //一级标题的名称
     collapsible: true, //是否允许折叠侧边菜单栏
