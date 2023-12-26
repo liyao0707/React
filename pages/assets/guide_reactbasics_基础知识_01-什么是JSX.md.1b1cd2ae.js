@@ -1,0 +1,10 @@
+import{_ as s,o as a,c as e,S as t}from"./chunks/framework.739ae78b.js";const A=JSON.parse('{"title":"基础知识-什么是JSX","description":"","frontmatter":{},"headers":[],"relativePath":"guide/reactbasics/基础知识/01-什么是JSX.md","filePath":"guide/reactbasics/基础知识/01-什么是JSX.md"}'),n={name:"guide/reactbasics/基础知识/01-什么是JSX.md"},l=t(`<h1 id="基础知识-什么是jsx" tabindex="-1">基础知识-什么是JSX <a class="header-anchor" href="#基础知识-什么是jsx" aria-label="Permalink to &quot;基础知识-什么是JSX&quot;">​</a></h1><ul><li><strong>什么是JSX？</strong></li></ul><blockquote><p>在React里面有一种语法叫 <code>JSX</code> , JSX将HTML语法直接加入到Js中，在通过翻译器转换到纯JS后再浏览器执行。 在JavaScript里面写标签 语法叫做JSX <code>JSX = JavaScript + XML</code> 编译转换是由Babel的JSX编译器实现</p></blockquote><div class="tip custom-block"><p class="custom-block-title">Babel转义过程</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki material-theme-palenight"><code><span class="line"><span style="color:#A6ACCD;">import React from &#39;react&#39;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">import ReactDom from &#39;react-dom&#39;;</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;!-- 转义前 --&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">ReactDom.render(&lt;div&gt;我是内容&lt;/div&gt;,document.getElementById(&#39;root&#39;))</span></span>
+<span class="line"><span style="color:#A6ACCD;">&lt;!-- 转义后 --&gt;</span></span>
+<span class="line"><span style="color:#A6ACCD;">ReactDom.render(React.createElement(&#39;div&#39;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">{   id:&#39;ID名&#39;,</span></span>
+<span class="line"><span style="color:#A6ACCD;">    class:&#39;class名&#39;</span></span>
+<span class="line"><span style="color:#A6ACCD;">},&#39;我是内容&#39;),</span></span>
+<span class="line"><span style="color:#A6ACCD;">document.getElementById(&#39;root&#39;))</span></span></code></pre></div></div>`,4),c=[l];function o(p,r,i,d,_,m){return a(),e("div",null,c)}const S=s(n,[["render",o]]);export{A as __pageData,S as default};
