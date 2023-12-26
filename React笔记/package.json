@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "vitepress dev docs ",
-    "bulid": "vitepress bulid docs",
+    "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
   "dependencies": {
